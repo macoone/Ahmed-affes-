@@ -10,10 +10,14 @@ BEGIN
     for i in range(0,len(sent-1)):
         if sent[i]=" ":
             words = words+1
+        end if
         majus(sent)
         if (sent[i]="A" or sent[i]="O" or sent[i]="U" or sent[i]="E" or sent[i]="I" or sent[i]="Y"):
             voy= voy+1
- write ("words=",words,"voy=",voy)
+        end if
+    end for
+end while            
+            write ("words=",words,"voy=",voy)
 
 END
 
