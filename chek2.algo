@@ -10,17 +10,22 @@ BEGIN
     read(n1)
     write("give the size of the table n2:")    
     read(n2)
-    for i in range (0,n1-1):
+    for i in range (0,n1-1)do
      write("T[",i,"]")
      read(T[i])
-    for j in range (0,n2-1):
+     end for
+    for j in range (0,n2-1)do
      write("T[",j,"]")
      read(T[j])
-    for i in range (0,n1-1):
+     end for
+    for i in range (0,n1-1)do
      if(T[i]<>T[j]):
-      s=s+T[i]    
-    for j in range (0,n2-1):   
+      s=s+T[i] 
+      end for
+    for j in range (0,n2-1)do   
      if(T[j]<>T[i]):
       s=s+T[j]
+      end if
+     end for
     write("The sum is:",s)
 END
