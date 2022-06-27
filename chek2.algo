@@ -4,6 +4,8 @@ VAR
  T2 : ARRAY_OF INTEGER[n2];
  i= INTEGER;
  j= INTEGER;
+ n1= INTEGER
+ n2= INTEGER
  s=0;
 BEGIN
     write("give the size of the table n1:")
