@@ -1,21 +1,21 @@
 ALGORITHM sentence
 VAR
- words=1;
- vowels =0;
- i= INTEGER;
+ P:INTEGER//nb de charachter 
 BEGIN
- write("Your sentence is :")
+ write("Your word is :")
  read(sent)
- if(sent[len(sent-1)]="."):
-    for i in range(0,len(sent-1)):
-        if sent[i]=" ":
-            words = words+1
-            end if
-        majus(sent)
-        if (sent[i]="A" or sent[i]="O" or sent[i]="U" or sent[i]="E" or sent[i]="I" or sent[i]="Y"):
-            voy= voy+1
-            end if
- end if
- write ("words=",words,"voy=",voy)
-
+ WHILE (sent<>"."):
+    p=p+1
+    for i in range(0,p-1):
+        IF sent[i]=" ":
+            IF sent[0]<>" ":
+             words = words+1
+            END_IF
+        END_IF        
+            majus(sent)
+    IF (sent[i]="A" or sent[i]="O" or sent[i]="U" or sent[i]="E" or sent[i]="I" or sent[i]="Y"):
+        voy= voy+1
+        END_IF          
+ END_WHILE
+  write ("words=",words,"voy=",voy)
 END
